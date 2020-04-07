@@ -1,0 +1,32 @@
+name: amqp-publisher
+version: 0.0.0.1
+github: "simspace/amqp-publisher"
+license: BSD3
+author: "SimSpace"
+maintainer: "SimSpace"
+copyright: "2020 (C) SimSpace"
+category: Web
+synopsis: Simple binary that publishes a message to an exchange via AMQP
+description: Please see the README on GitHub at <https://github.com/Simspace/haskell-amqp-utils#readme>
+
+executables:
+  amqp-publisher:
+    main: amqp-publisher.hs
+    source-dirs:
+      - app
+    dependencies:
+      - amqp
+      - base
+      - bytestring
+      - connection
+      - data-default-class
+      - network
+      - optparse-applicative
+      - text
+    ghc-options:
+      - -Wall
+      - -Werror
+      - -fwarn-tabs
+      - -Wincomplete-uni-patterns
+      - -O2
+      - -eventlog

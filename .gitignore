@@ -1,0 +1,6 @@
+.stack-work/
+*.cabal
+*~
+pub.sh
+sub.sh
+sample.json
